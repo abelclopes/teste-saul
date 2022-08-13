@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/css/style.css" />
+    <script src="libs/js/main.js"></script>
+    <title>Cadastro de funcionarios</title>
+</head>
+<body>
+    <div class="comtainer">
+
+        <div class="botoes">
+            <button onclick="GravarNoBanco(datalist)">gravar</button>
+            <button id="lerBanco" onclick="LerBanco(datalist)">ler</button>
+        </div>
+        <div class="DivIncluirPessoas">
+            Nome:<input type="text" name="nome" id="nome" value="" />
+            <button onclick="IncluirPessoa()">Incluir</button>
+        </div>
+        <div class="listarPessoas">
+            <h1>Pessoas</h1>
+            <div class="tabelaPessoas"></div>
+        </div>
+        <div class="ShowJson">
+            <textarea name="pessoasJson" id="pessoasJson" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    
+</body>
+</html>
